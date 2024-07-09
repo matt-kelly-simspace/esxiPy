@@ -9,9 +9,6 @@ except:
     print("You need to install pyVmomi and pyVim via 'pip install pyVim pyVmomi' ")
     sys.exit()
 
-
-
-
 def list_folders(folder, lookfor, indent=0):
     # Print the folder name with indentation
     if lookfor in str(folder.name):
@@ -43,11 +40,9 @@ def list_deployments(folder, indent):
 ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
 ssl_context.verify_mode = ssl.CERT_NONE
 
-#Only checking PROD and EV2
-SERVERS = ["vcenter-ev2.simspace.lan","vcenter-prod.simspace.lan"]
+SERVERS = ["SERVER1","SER2VER"]
 
-#Checking specifically for Portal and TCDEV deployments
-FOLDERS = [".dt_tcdev", ".dt_portal-us"]
+FOLDERS = ["FOLDER1", "FOLDER2"]
 
 #Can be changed to any search term. 
 search_root = "deployments"
