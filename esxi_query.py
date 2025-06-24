@@ -40,7 +40,7 @@ def list_deployments(folder, indent):
 ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
 ssl_context.verify_mode = ssl.CERT_NONE
 
-SERVERS = ["SERVER1","SER2VER"]
+SERVERS = ["SERVER1","SERVER2"]
 
 FOLDERS = ["FOLDER1", "FOLDER2"]
 
